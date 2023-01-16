@@ -15,7 +15,8 @@ public class InValidInputException extends RuntimeException {
 		super();
 	}
 
-	public InValidInputException(String message, Throwable cause, boolean enableSuppression, boolean writableStackTrace) {
+	public InValidInputException(String message, Throwable cause, boolean enableSuppression,
+			boolean writableStackTrace) {
 		super(message, cause, enableSuppression, writableStackTrace);
 	}
 
@@ -30,5 +31,5 @@ public class InValidInputException extends RuntimeException {
 	public InValidInputException(Throwable cause) {
 		super(cause);
 	}
-	
+
 }
