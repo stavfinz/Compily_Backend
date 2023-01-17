@@ -21,11 +21,7 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 @ExtendWith(MockitoExtension.class)
-class CompilyApplicationTests {
-
-	// @Test
-	// void contextLoads() {
-	// }
+class DataSerializationTest {
 
 	@Test
 	void serializeToJson_deserializeFromJson_Patient() throws JsonProcessingException {

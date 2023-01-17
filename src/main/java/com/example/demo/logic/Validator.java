@@ -4,8 +4,6 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
-import java.util.Date;
-
 import org.springframework.stereotype.Component;
 
 import com.example.demo.data.model.Doctor;
@@ -38,7 +36,7 @@ public class Validator implements ValidatorInterface {
 		SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
 		
 		try {
-			Date validDate = dateFormat.parse(date.trim());
+			dateFormat.parse(date.trim());
 			LocalDate validDateForYear = LocalDate.parse(date,formatter);
 			this.isValidYear(validDateForYear.getYear());
 			
